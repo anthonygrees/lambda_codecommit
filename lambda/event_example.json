@@ -1,0 +1,27 @@
+{
+   "Records":[
+      {
+         "awsRegion":"us-west-2",
+         "examplecode":{
+            "references":[
+               {
+                  "commit":"example19627b2d947e22999352bb8ab781b49619",
+                  "ref":"refs/heads/master"
+               }
+            ]
+         },
+         "customData":"None",
+         "eventId":"1fae8c3a-87f6-44b8-9455-6f277e0346",
+         "eventName":"ReferenceChanges",
+         "eventPartNumber":1,
+         "eventSource":"aws:codecommit",
+         "eventSourceARN":"arn:aws:codecommit:us-west-2:111111111111111:codecommit_test",
+         "eventTime":"2021-03-05T03:47:23.634+0000",
+         "eventTotalParts":1,
+         "eventTriggerConfigId":"exampleaf44ab64-a2ab-41af-aab9-bd385097",
+         "eventTriggerName":"MyCommit",
+         "eventVersion":"1.0",
+         "userIdentityARN":"arn:aws:iam::111111111111111:user/anthony"
+      }
+   ]
+}
