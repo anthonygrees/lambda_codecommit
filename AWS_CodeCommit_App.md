@@ -23,3 +23,15 @@ sudo /opt/splunk/bin/splunk install app /tmp/awscodecommit.tgz -auth user:passwo
 Navigate to the [codecommit-to-hec-splunk](https://serverlessrepo.aws.amazon.com/applications/us-east-1/457777705445/codecommit-to-splunk-hec) lambda application and click the deploy button.
   
 ![UI](https://github.com/anthonygrees/lambda_codecommit/blob/main/images/lambda.png)
+  
+#### Step 3: Add a Trigger to the Lambda Function
+Add a trigger to the Lambda function you just deployed and attach it to you AWS CodeCommit repository.
+  
+![Trigger](https://github.com/anthonygrees/lambda_codecommit/blob/main/images/trigger.png)
+  
+#### Step 4: Create Environment Variables for the Lambda Function
+In order for the Lambda function to send the events triggered from your code commits to you Splunk instance, it needs to know `how` to connect to the HTTP Event Collector end point.  The connection details are stored in the Lambda Environment variables.
+  
+![UI](https://github.com/anthonygrees/lambda_codecommit/blob/main/images/env-var.png)
+  
+  
